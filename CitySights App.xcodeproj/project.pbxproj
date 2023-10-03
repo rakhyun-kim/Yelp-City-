@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504E78302ACC747000B3AF49 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E782F2ACC747000B3AF49 /* DataService.swift */; };
 		50D7465A2ACB51C700D0910F /* CitySights_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D746592ACB51C700D0910F /* CitySights_AppApp.swift */; };
 		50D7465C2ACB51C700D0910F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7465B2ACB51C700D0910F /* ContentView.swift */; };
 		50D7465E2ACB51C800D0910F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D7465D2ACB51C800D0910F /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		504E782F2ACC747000B3AF49 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		50D746562ACB51C700D0910F /* CitySights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CitySights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D746592ACB51C700D0910F /* CitySights_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySights_AppApp.swift; sourceTree = "<group>"; };
 		50D7465B2ACB51C700D0910F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				50D746682ACB69F600D0910F /* CitySights-App-Info.plist */,
 				50D746592ACB51C700D0910F /* CitySights_AppApp.swift */,
 				50D7465B2ACB51C700D0910F /* ContentView.swift */,
+				504E782F2ACC747000B3AF49 /* DataService.swift */,
 				50D746672ACB68C000D0910F /* Config.xcconfig */,
 				50D7465D2ACB51C800D0910F /* Assets.xcassets */,
 				50D7465F2ACB51C800D0910F /* Preview Content */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504E78302ACC747000B3AF49 /* DataService.swift in Sources */,
 				50D7465C2ACB51C700D0910F /* ContentView.swift in Sources */,
 				50D7465A2ACB51C700D0910F /* CitySights_AppApp.swift in Sources */,
 			);
