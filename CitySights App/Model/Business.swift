@@ -15,7 +15,7 @@ struct Business: Decodable, Identifiable {
     var displayPhone: String?
     var distance: Double?
     var imageUrl: String?
-    var isClose: Bool?
+    var isClosed: Bool?
     var location: Location?
     var name: String?
     var phone: String?
@@ -27,7 +27,7 @@ struct Business: Decodable, Identifiable {
     enum CodingKeys: String, CodingKey {
         
         case displayPhone = "display_phone"
-        case isClose = "is_close"
+        case isClosed = "is_closed"
         case imageUrl = "image_url"
         case reviewCount = "review_count"
         
@@ -56,7 +56,7 @@ struct Location: Decodable {
     var address2: String?
     var address3: String?
     var city: String?
-    var county: String?
+    var country: String?
     var displayAddress: [String]?
     var state: String?
     var zipCode: String?
@@ -70,7 +70,7 @@ struct Location: Decodable {
         case address2
         case address3
         case city
-        case county
+        case country
         case state
     }
 }
