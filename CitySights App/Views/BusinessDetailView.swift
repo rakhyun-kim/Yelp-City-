@@ -9,9 +9,11 @@ import SwiftUI
 
 struct BusinessDetailView: View {
     
-    var business: Business?
+    @Environment(BusinessModel.self) var model
     
     var body: some View {
+        
+        let business = model.selectedBusiness
         
         VStack(spacing: 0) {
             
