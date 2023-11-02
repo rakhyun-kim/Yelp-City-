@@ -19,7 +19,7 @@ struct MapView: View {
             ForEach(model.businesses, id: \.id) { b in
                 
                 Marker(b.name ?? "Restaurant", coordinate: CLLocationCoordinate2D(latitude: b.coordinates?.latitude ?? 0, longitude: b.coordinates?.longitude ?? 0))
-                    .tag(b.id! ?? "None")
+                    .tag(b.id ?? "None")
             }
         }
         .onChange(of: selectedBusinessId) { oldValue, newValue in
