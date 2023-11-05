@@ -9,15 +9,18 @@ import SwiftUI
 
 @main
 struct CitySights: App {
+    
+    @State var model = BusinessModel()
+    @AppStorage("Onboarding") var needsOnboarding = true
+    
     var body: some Scene {
-        
-        @State var model = BusinessModel()
         
         WindowGroup {
             HomeView()
                 .environment(model)
-                .fullScreenCover(isPresented: Binding.constant(true)) {
-                    // TODO
+                .fullScreenCover(isPresented: $needsOnboarding) {
+                    // on dismiss
+                    needsOnboarding = false
                 } content: {
                     OnBoardingView()
                        

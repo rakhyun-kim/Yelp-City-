@@ -70,7 +70,6 @@
 				504E783A2ACCF6A800B3AF49 /* BusinessDetailView.swift */,
 				50F1B8B52AF32ABB002BAF36 /* mapView.swift */,
 				50F1B8B72AF32B1D002BAF36 /* ListView.swift */,
-				50F1B8BD2AF44AE2002BAF36 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +113,7 @@
 				50D746682ACB69F600D0910F /* CitySights-App-Info.plist */,
 				50D746672ACB68C000D0910F /* Config.xcconfig */,
 				50D746592ACB51C700D0910F /* CitySights.swift */,
+				50F1B8BD2AF44AE2002BAF36 /* Onboarding */,
 				500C0C0F2AF2B4A6003F9FDA /* Views */,
 				500C0C0E2AF2B491003F9FDA /* ViewModel */,
 				504E78372ACCB6CA00B3AF49 /* Helper */,
