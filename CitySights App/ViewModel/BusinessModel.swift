@@ -58,9 +58,12 @@ class BusinessModel: NSObject, CLLocationManagerDelegate {
         }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-       currenUserLocation = locations.last?.coordinate
+       
         
-        if currenUserLocation != nil {
+        if currenUserLocation == nil {
+            
+            currenUserLocation = locations.last?.coordinate
+            
             // Call business search
             getbusinesses()
         }
