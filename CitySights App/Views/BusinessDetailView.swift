@@ -34,19 +34,6 @@ struct BusinessDetailView: View {
                     Image("detail-placeholder-image")
                         .resizable()
                 }
-                
-                VStack {
-                    Button(action: {
-                        dismiss()
-                    }, label: {
-                        Image(systemName: "multiply.circle.fill")
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .padding(.bottom, 120)
-                            .font(.largeTitle)
-                            .foregroundStyle(.gray)
-                            .opacity(0.8)
-                    })
-                }
                 VStack {
                     Spacer() // to down to the bottom left
                     Image("yelp-attribution-image")
@@ -54,6 +41,9 @@ struct BusinessDetailView: View {
                 }
             }
             .frame(height: 164)
+            .onTapGesture {
+                dismiss()
+            }
             
             if let isClosed = business?.isClosed {
                 ZStack(alignment: .leading) {
