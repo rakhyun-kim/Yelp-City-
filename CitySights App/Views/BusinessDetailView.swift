@@ -10,6 +10,7 @@ import SwiftUI
 struct BusinessDetailView: View {
     
     @Environment(BusinessModel.self) var model
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         
@@ -20,11 +21,25 @@ struct BusinessDetailView: View {
             ZStack(alignment:.trailing) {
                 Image("detail-placeholder-image")
                     .resizable()
+                
+                VStack {
                     
+                    Button(action: {
+                        dismiss()
+                    }, label: {
+                        Image(systemName: "multiply.circle.fill")
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.bottom, 120)
+                            .font(.largeTitle)
+                            .foregroundStyle(.gray)
+                            .opacity(0.8)
+                    })
+                }
                 VStack {
                     Spacer() // to down to the bottom left
                     Image("yelp-attribution-image")
                         .frame(width: 72, height: 36)
+
                 }
             }
             .frame(height: 164)

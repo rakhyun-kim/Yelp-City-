@@ -26,6 +26,7 @@ struct ListView: View {
                             Text(TextHelper.distanceAwayText(meters: b.distance ?? 0))
                                 .font(Font.system(size: 16))
                                 .foregroundStyle(Color(red: 67/255, green: 71/255, blue: 76/255))
+                            
                         }
                         Spacer()
                         Image("regular_\(b.rating ?? 0)")
